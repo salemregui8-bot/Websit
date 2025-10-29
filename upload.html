@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Upload - FileVault</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="nav card">
+      <div class="logo">FileVault</div>
+      <div style="margin-left:auto;display:flex;gap:8px">
+        <a href="index.html">Home</a>
+        <a href="upload.html">Upload</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="data.html">Data</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="header">
+        <div>
+          <h2 class="h1">Upload Files</h2>
+          <p class="p-muted">اسحب الملفات هنا أو اضغط لاختيارها. الملفات تُخزّن في المتصفح.</p>
+        </div>
+        <div>
+          <label class="btn file-input">
+            Choose files
+            <input id="fileElem" type="file" multiple style="display:none" />
+          </label>
+        </div>
+      </div>
+
+      <div id="drop-area" class="upload-area">
+        <p style="margin:0">اسحب الملفات هنا</p>
+        <p class="p-muted" style="margin-top:8px">أو اضغط على زر "Choose files" لاختيار ملفات من جهازك.</p>
+        <p id="upload-status" class="p-muted" style="margin-top:10px"></p>
+      </div>
+    </div>
+
+    <div style="height:20px"></div>
+    <div class="card">
+      <h3 style="margin-top:0">نصيحة</h3>
+      <p class="p-muted">هذه النسخة تخزن الملفات داخل المتصفح فقط. لو تحب تخزين مركزي على الانترنت (مثلاً Firebase أو سيرفر خاص)، نجم نمدّك بكود الربط بسهولة.</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Data - FileVault</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="nav card">
+      <div class="logo">FileVault</div>
+      <div style="margin-left:auto;display:flex;gap:8px">
+        <a href="index.html">Home</a>
+        <a href="upload.html">Upload</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="data.html">Data</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="header">
+        <div>
+          <h2 class="h1">Data Table</h2>
+          <p class="p-muted">قائمة بكل الملفات: اسم، نوع، حجم، تاريخ الرفع، وإجراءات (تحميل/حذف).</p>
+        </div>
+      </div>
+
+      <table class="table">
+        <thead>
+          <tr><th>Name</th><th>Type</th><th>Size</th><th>Uploaded</th><th>Actions</th></tr>
+        </thead>
+        <tbody id="data-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

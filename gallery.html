@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ar">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery - FileVault</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="nav card">
+      <div class="logo">FileVault</div>
+      <div style="margin-left:auto;display:flex;gap:8px">
+        <a href="index.html">Home</a>
+        <a href="upload.html">Upload</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="data.html">Data</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="header">
+        <div>
+          <h2 class="h1">Gallery</h2>
+          <p class="p-muted">كُلّ الصور والملفات اللي رفعتها هنا. اضغط على أي صورة لمعاينتها أو تحميلها.</p>
+        </div>
+        <div><a class="btn" href="upload.html">رفع ملف جديد</a></div>
+      </div>
+
+      <div id="gallery-grid" class="grid"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
